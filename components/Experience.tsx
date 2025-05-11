@@ -25,9 +25,10 @@ export default function Experience() {
         <div className="max-w-3xl mx-auto space-y-8">
           {experiences.map((exp, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex justify-between flex-col md:flex-row items-start mb-4">
+
                 <h3 className="text-xl font-semibold text-blue-600">{exp.title}</h3>
-                <span className="text-gray-500 text-sm hidden md:inline">{exp.period}</span>
+                <span className="text-gray-500 text-sm md:inline">{exp.period}</span>
               </div>
               <p className="text-gray-600">{exp.description}</p>
             </div>
