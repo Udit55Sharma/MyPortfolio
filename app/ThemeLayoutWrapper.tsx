@@ -31,7 +31,7 @@ export default function ThemeLayoutWrapper({ children }: { children: React.React
 
             <div className="hidden md:flex items-center space-x-6">
               <a href="#about" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">About</a>
-              <a href="#experience" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Experience</a>
+              <a href="#experience" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Internship</a>
               <a href="#projects" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Projects</a>
               <a href="#coding-profiles" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Coding Profiles</a>
               <a href="#contact" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Contact</a>
@@ -81,7 +81,7 @@ export default function ThemeLayoutWrapper({ children }: { children: React.React
 
       <footer className="bg-gray-100 dark:bg-gray-800 py-8">
         <div className="container mx-auto px-4 text-center text-gray-600 dark:text-gray-400">
-          <p>© {new Date().getFullYear()} Udit Sharma. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} udit55sharma@gmail.com All rights reserved.</p>
         </div>
       </footer>
     </>

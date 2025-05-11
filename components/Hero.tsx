@@ -26,7 +26,7 @@ export default function Hero() {
               Hi, I'm <span className="text-blue-600 dark:text-blue-400">Udit Sharma</span>
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Tech enthusiast and aspiring software developer with a strong foundation in programming, data science, and AI. Currently pursuing B.Tech in Information Technology from GL Bajaj Institute of Technology and Management.
+              Tech enthusiast with a strong foundation in programming, data science, and AI. Currently pursuing B.Tech in Information Technology from GL Bajaj Institute of Technology and Management.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link
