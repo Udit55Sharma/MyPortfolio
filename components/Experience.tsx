@@ -27,7 +27,7 @@ export default function Experience() {
             <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-xl font-semibold text-blue-600">{exp.title}</h3>
-                <span className="text-gray-500 text-sm">{exp.period}</span>
+                <span className="text-gray-500 text-sm hidden md:inline">{exp.period}</span>
               </div>
               <p className="text-gray-600">{exp.description}</p>
             </div>
@@ -36,4 +36,4 @@ export default function Experience() {
       </div>
     </section>
   )
-} 
+}
