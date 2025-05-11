@@ -45,9 +45,9 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Contact</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">Contact</h2>
         
         <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-8">
           {contactInfo.map((info, index) => (
@@ -56,14 +56,14 @@ export default function Contact() {
               href={info.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow flex items-center gap-4"
+              className="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow flex items-center gap-4 dark:bg-gray-800 dark:text-white dark:hover:shadow-lg"
             >
-              <div className="text-blue-600">
+              <div className="text-blue-600 dark:text-blue-400">
                 {info.icon}
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">{info.type}</h3>
-                <p className="text-gray-600">{info.value}</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{info.type}</h3>
+                <p className="text-gray-600 dark:text-gray-400">{info.value}</p>
               </div>
             </Link>
           ))}
@@ -71,4 +71,4 @@ export default function Contact() {
       </div>
     </section>
   )
-} 
+}

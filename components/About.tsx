@@ -26,20 +26,20 @@ export default function About() {
   }
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">About Me</h2>
         
         <div className="grid md:grid-cols-2 gap-12">
           {/* Education */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-blue-600">Education</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Education</h3>
             <div className="space-y-6">
               {education.map((edu, index) => (
-                <div key={index} className="bg-gray-50 p-6 rounded-lg">
+                <div key={index} className="bg-gray-50 p-6 rounded-lg dark:bg-gray-800 dark:text-white">
                   <h4 className="font-semibold text-lg">{edu.institution}</h4>
-                  <p className="text-gray-600">{edu.degree}</p>
-                  <p className="text-gray-500">{edu.details}</p>
+                  <p className="text-gray-600 dark:text-gray-400">{edu.degree}</p>
+                  <p className="text-gray-500 dark:text-gray-500">{edu.details}</p>
                 </div>
               ))}
             </div>
@@ -47,13 +47,13 @@ export default function About() {
 
           {/* Skills */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-blue-600">Skills</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Skills</h3>
             <div className="space-y-6">
               <div>
-                <h4 className="font-semibold mb-2">Languages</h4>
+                <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">Languages</h4>
                 <div className="flex flex-wrap gap-2">
                   {skills.languages.map((skill, index) => (
-                    <span key={index} className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    <span key={index} className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm dark:bg-blue-600 dark:text-blue-100">
                       {skill}
                     </span>
                   ))}
@@ -61,10 +61,10 @@ export default function About() {
               </div>
               
               <div>
-                <h4 className="font-semibold mb-2">Frameworks</h4>
+                <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">Frameworks</h4>
                 <div className="flex flex-wrap gap-2">
                   {skills.frameworks.map((skill, index) => (
-                    <span key={index} className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                    <span key={index} className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm dark:bg-green-600 dark:text-green-100">
                       {skill}
                     </span>
                   ))}
@@ -72,10 +72,10 @@ export default function About() {
               </div>
 
               <div>
-                <h4 className="font-semibold mb-2">Tools</h4>
+                <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">Tools</h4>
                 <div className="flex flex-wrap gap-2">
                   {skills.tools.map((skill, index) => (
-                    <span key={index} className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">
+                    <span key={index} className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm dark:bg-purple-600 dark:text-purple-100">
                       {skill}
                     </span>
                   ))}
@@ -83,10 +83,10 @@ export default function About() {
               </div>
 
               <div>
-                <h4 className="font-semibold mb-2">Libraries</h4>
+                <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">Libraries</h4>
                 <div className="flex flex-wrap gap-2">
                   {skills.libraries.map((skill, index) => (
-                    <span key={index} className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">
+                    <span key={index} className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm dark:bg-yellow-600 dark:text-yellow-100">
                       {skill}
                     </span>
                   ))}
@@ -94,10 +94,10 @@ export default function About() {
               </div>
 
               <div>
-                <h4 className="font-semibold mb-2">Soft Skills</h4>
+                <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">Soft Skills</h4>
                 <div className="flex flex-wrap gap-2">
                   {skills.softSkills.map((skill, index) => (
-                    <span key={index} className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">
+                    <span key={index} className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm dark:bg-gray-700 dark:text-gray-300">
                       {skill}
                     </span>
                   ))}
@@ -109,4 +109,4 @@ export default function About() {
       </div>
     </section>
   )
-} 
+}

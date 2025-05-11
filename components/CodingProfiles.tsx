@@ -18,9 +18,9 @@ export default function CodingProfiles() {
   ]
 
   return (
-    <section id="coding-profiles" className="py-20 bg-gray-50">
+    <section id="coding-profiles" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Coding Profiles</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">Coding Profiles</h2>
         
         <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-8">
           {profiles.map((profile, index) => (
@@ -29,14 +29,14 @@ export default function CodingProfiles() {
               href={profile.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow flex items-center gap-4"
+              className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow flex items-center gap-4 dark:bg-gray-800 dark:text-white dark:hover:shadow-lg"
             >
-              <div className="">
+              <div>
                 <Image src={profile.logo} alt={profile.platform + ' logo'} width={40} height={40} />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900">{profile.platform}</h3>
-                <p className="text-gray-600">{profile.stats}</p>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{profile.platform}</h3>
+                <p className="text-gray-600 dark:text-gray-400">{profile.stats}</p>
               </div>
             </Link>
           ))}
@@ -44,4 +44,4 @@ export default function CodingProfiles() {
       </div>
     </section>
   )
-} 
+}
