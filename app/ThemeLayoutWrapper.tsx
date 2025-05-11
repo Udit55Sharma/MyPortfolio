@@ -31,7 +31,7 @@ export default function ThemeLayoutWrapper({ children }: { children: React.React
 
             <div className="hidden md:flex items-center space-x-6">
               <a href="#about" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">About</a>
-              <a href="#experience" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Internship</a>
+              <a href="#experience" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Internships/Certifications</a>
               <a href="#projects" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Projects</a>
               <a href="#coding-profiles" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Coding Profiles</a>
               <a href="#contact" className="hover:text-blue-600 dark:text-white dark:hover:text-blue-400">Contact</a>
